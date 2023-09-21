@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.MenuContainer {
+  position: fixed;
+  margin-top: 0px;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 50px;
+  background-color: var(--dark-blue);
+  border-bottom: 1px solid rgba(89, 89, 89, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: var(--tertiary);
+}
+
+
+.navMenu {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  display: flex;
+  gap: 20px;
+  /* -webkit-transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
+}
+
+.navMenu h1 {
+  text-decoration: none;
+  font-size: 1.2em;
+
+  text-transform: uppercase;
+  font-weight: 500;
+
+  /* -webkit-transition: all 0.2s ease-in-out; */
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.Item {
+  position: relative;
+}
+
+.navMenu h1:hover {
+  display: inline-block;
+  color:  var(--secondary);
+}
+
+.activeItem {
+  color: var(--secondary);
+  pointer-events: none;
+  font-weight: 700;
+}
+
+.activeItem span {
+  border-bottom: solid 3px var(--secondary);
+  display: block;
+}
+
+.line {
+  position: relative;
+}
+
+.line::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--secondary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.line:hover {
+  color: #95a5a6;
+}
+
+.line:hover::after {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+.logo{
+  margin: 5px 15px;
+  cursor: pointer; 
+  transition-property:color;  
+  transition-duration: 0.3s;
+  
+}
+
+.logo:hover{
+  background-color: #2d3748;
+}
+
+.iconMenu{
+display: none;
+}
+
+@media (max-width: 768px) {
+  .iconMenu{
+    display: block;
+    }
+
+  .MenuContainer {
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+
+  }
+
+  .navMenu {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transform: none;
+    margin-bottom: 15px;
+  }
+
+  .navMenu h1 {
+    font-size: 1.5em;
+  }
+
+  .navMenu .line::after {
+    display: none;
+  }
+
+
+  .menuMobile{
+
+    height: 100vh;
+    z-index: 101;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    width: 100%;
+  }
+}

@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --text-light: #0D1B2A; 
+    --background-light: #E6ECFF; 
+    --text-dark: #F9F6FF; 
+    --background-dark: #0D1B2A; 
+    --primary: #8A6AE6; 
+    --secondary: #D16AE6; 
+    --tertiary: #C9E265; 
+    --quaternary: #DBE4B8; 
+    --dark-blue: #004466;
+    --gradient-dark:  radial-gradient(circle, var(--dark-blue), var(--background-dark));
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Raleway/static/Raleway-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/Raleway/static/Raleway-Bold.ttf') format('ttf');
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+  .light {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-light);
+
+    --background-color: var(--background-light);
+    --color: var(--text-light);
+    
+  }
+  
+  .dark {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+
+    --background-color: var(--background-dark);
+    --color: var(--text-dark);
+  }

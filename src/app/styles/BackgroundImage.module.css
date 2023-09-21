@@ -1,0 +1,24 @@
+/* Estilos CSS en un archivo CSS o en el componente */
+.bkImage {
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar la imagen */
+  transition: opacity 2s ease;
+}
+
+.imageLoaded {
+  opacity: 1; /* Cuando la imagen esté cargada, establece la opacidad en 1 para mostrarla */
+}
+
+@media (max-width: 768px) {
+  .bkImage {
+    height: 100vh;
+  }
+}

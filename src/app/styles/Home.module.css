@@ -1,0 +1,88 @@
+.container {
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .elementos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  .cards {
+    display: flex;
+    align-items: center;
+    height: 75vh;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    max-width: 350px;
+  margin-left: 50px;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  
+  .bloque {
+    position: absolute;
+    height: 232px;
+    width: 360px;
+    margin-top: -15px;
+    margin-left: -35px;
+
+    border-radius: 10px;
+  }
+  
+  .cardOcultar {
+    max-width: 350px;
+    margin: 0 10px;
+    flex-grow: 1;
+    flex-basis: 0;
+    display: none;
+
+  }
+  
+  .cardHover {
+    transform: rotate(-20deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .cardHover:hover {
+    transform: rotate(0);
+  }
+  
+  .social {
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .pie {
+    margin-bottom: 20px;
+  }
+  
+  .imageAnimar {
+    width: 240px;
+    width: 240px;
+    border-radius: 50%;
+    shape-outside: circle();
+    border: 4px solid var(--color-primary);
+  }
+  
+  @media screen and (min-width: 1025px) {
+    .cards {
+      
+      
+    }
+  
+    .cardOcultar {
+      display: block;
+      padding-left: 50px;
+    }
+  }
+  

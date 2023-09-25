@@ -1,0 +1,255 @@
+{
+    "front": [
+      {
+        "id": 1,
+        "name": "JavaScript",
+        "nivel": 75,
+        "detalle": ""
+      },
+      {
+        "id": 2,
+        "name": "CSS",
+        "nivel": 80,
+        "detalle": ""
+      },
+      {
+        "id": 3,
+        "name": "HTML",
+        "nivel": 90
+      },
+      {
+        "id": 4,
+        "name": "React",
+        "nivel": 60,
+        "detalle": ""
+      },
+      {
+        "id": 5,
+        "name": "NextJS",
+        "nivel": 60,
+        "detalle": ""
+      },
+      {
+        "id": 6,
+        "name": "Bootstrap",
+        "nivel": 40,
+        "detalle": ""
+      },
+      {
+        "id": 7,
+        "name": "Tailwind",
+        "nivel": 40,
+        "detalle": ""
+      }
+
+    ],
+
+    "backend": [
+      {
+        "id": 1,
+        "name": "Java",
+        "nivel": 60,
+        "detalle": ""
+      },
+      {
+        "id": 2,
+        "name": "JavaX",
+        "nivel": 60,
+        "detalle": ""
+      },
+      {
+        "id": 3,
+        "name": "Spring Boot",
+        "nivel": 50,
+        "detalle": ""
+      },
+      {
+        "id": 4,
+        "name": "MySQL",
+        "nivel": 60,
+        "detalle": ""
+      },
+      {
+        "id": 5,
+        "name": "MongoDB",
+        "nivel": 60,
+        "detalle": ""
+      },
+      {
+        "id": 6,
+        "name": "NodeJS",
+        "nivel": 30,
+        "detalle": ""
+      },
+      {
+        "id": 7,
+        "name": "Oracle Database JSON",
+        "nivel": 40,
+        "detalle": ""
+      }
+      ,
+      {
+        "id": 8,
+        "name": "Express",
+        "nivel": 30,
+        "detalle": ""
+      }
+
+    ],
+
+    "otros": [
+      {
+        "id": 1,
+        "name": "Excel Avanzado (Macros)",
+        "nivel": 75,
+        "detalle": ""
+      },
+      {
+        "id": 2,
+        "name": "Photoshop",
+        "nivel": 50,
+        "detalle": ""
+      },
+      {
+        "id": 3,
+        "name": "Corel Draw",
+        "nivel": 50,
+        "detalle": ""
+      },
+      {
+        "id": 4,
+        "name": "Illustrator",
+        "nivel": 30,
+        "detalle": ""
+      },
+      {
+        "id": 5,
+        "name": "WordPress",
+        "nivel": 50,
+        "detalle": ""
+      },
+      {
+        "id": 6,
+        "name": "Joomla",
+        "nivel": 75,
+        "detalle": ""
+      }
+
+    ],
+    "projects" : [
+      {
+        "id": 1,
+        "title": "Lista de tareas",
+        "description": "El usuario puede agregar tareas y marcarlas como completadas, también puede filtrar según su estado y eliminarlas. Tiene opción de cambiar de tema",
+        "demo": "https://todolist-darkmode.netlify.app/",
+        "category": "FRONTEND",
+        "tools": "NextJS (React), CSS",
+        "repositorio":"https://github.com/rafopm/todo-list",
+        "isgif": false
+      },
+      {
+        "id": 2,
+        "title": "Formulario de suscripción",
+        "description": "El usuario agrega su correo electrónico y envía el formulario. El usuario puede ver un mensaje de envío exitoso. Validación de formulario",
+        "demo": "https://newsletter-sign-up-success.netlify.app/",
+        "category": "FRONTEND",
+        "tools": "NextJS (React), CSS",
+        "repositorio":"https://github.com/rafopm/newsletter-sign-up-with-success-message-main",
+        "isgif": false
+      },
+      {
+        "id": 3,
+        "title": "Paqariy",
+        "description": "Aplicación desplegada en Oracle Cloud Infraestructure, sobre 2 instancias y un balanceador. Apicación permite registro de usuarios, publicar y dar me gusta",
+        "demo": "https://paqariy.netlify.app/",
+        "category": "FULL STACK",
+        "tools": "NextJS (React), NodeJS, Express, Oracle JSON Database,",
+        "repositorio":"https://github.com/rafopm",
+        "isgif": false
+      },
+      {
+        "id": 4,
+        "title": "QR code component",
+        "description": "Solucion de Challenge sobre creacion de una card.",
+        "demo": "https://rafopm.github.io/qr-code-component/",
+        "category": "FRONTEND",
+        "tools": "HTML5, CSS",
+        "repositorio":"https://github.com/rafopm/qr-code-component",
+        "isgif": false
+      },
+      {
+        "id": 5,
+        "title": "Foro",
+        "description": "Creación de Api Rest con Java + Spring, con seguridad token para acceso a datos, para el fronted se uso NextJS (React), CSS y HTML5. El deploy se realizó en Azure",
+        "demo": "https://front-next-react.netlify.app/login",
+        "category": "FULL STACK",
+        "tools": "Java, Spring Boot, HTML5, CSS, React, NextJS, MySQL, Microsoft Azure",
+        "repositorio":"https://github.com/rafopm/api-foro-java-one",
+        "isgif": false
+      },
+      {
+        "id": 6,
+        "title": "Carrito de compras",
+        "description": "Aplicación que muestra lista de productos con la posibilidad de agregar productos a un carrito de compras.",
+        "demo": "https://next-react-api-nodejs-mongodb.netlify.app",
+        "category": "FULL STACK",
+        "tools": "NextJS (React), CSS, HTML5, NodeJS, MongoDB",
+        "repositorio":"https://github.com/rafopm/next-react-tienda-online",
+        "isgif": false
+      },
+      {
+        "id": 7,
+        "title": "Inmersión de datos",
+        "description": "Análisis de grandes bases de datos, para este caso se utilizó encuesta nacional del INEI para revisar el acceso a educación en los diferentes departamentos del Perú.",
+        "demo": "https://github.com/rafopm/inmersion-datos",
+        "category": "ANÁLISIS DE DATOS",
+        "tools": "Python, Pandas, Google Colaboratory",
+        "repositorio":"https://github.com/rafopm/inmersion-datos",
+        "isgif": false
+      },
+      {
+        "id": 8,
+        "title": "Rick & Morty",
+        "description": "Aplicación que usa la Api Rick & Morty y muestra cartas de los personajes. Muestra un color de ícono dependiendo de si están vivos o muertos.",
+        "demo": "https://ricks-mortys.netlify.app/",
+        "category": "FRONTEND",
+        "tools": "HTML5, CSS, React, Api React & Morty",
+        "repositorio":"https://github.com/rafopm/rick-morty",
+        "isgif": false
+      },
+      {
+        "id": 9,
+        "title": "Encryptor",
+        "description": "Encripta texto para enviarlo a través de algún servicio de mensajería, el receptor debe usar la aplicación para desencriptar el mensaje.",
+        "demo": "https://encriptador-texto-react.netlify.app/",
+        "category": "FRONTEND",
+        "tools": "HTML5, CSS, React, JavaScript",
+        "repositorio":"https://github.com/rafopm/encriptador-texto-2",
+        "isgif": false
+      },
+      {
+        "id": 10,
+        "title": "Calculadora",
+        "description": "Calculadora básica: realiza operaciones de suma, resta, multiplicación y división",
+        "demo": "https://calculadora-ora.netlify.app/",
+        "category": "FRONTEND",
+        "tools": "HTML5, CSS, React",
+        "repositorio":"https://github.com/rafopm/calculator-react-fcc",
+        "isgif": false
+      },
+      {
+        "id": 11,
+        "title": "API Paqariy",
+        "description": "Api que permite crear, actualizar, listar y eliminar posts",
+        "demo": "https://paqariy.netlify.app/",
+        "category": "BACKEND",
+        "tools": "NodeJS, Express, Oracle Database JSON, Oracle Infraestructure",
+        "repositorio":"https://paqariy.netlify.app/",
+        "isgif": true
+      }
+    ]
+  }
+  
+  
+  
+  

@@ -24,11 +24,11 @@ const Items = [
         desc: 'Tools',
         display: 'Herramientas',
     },
-    {
-        id: 4,
-        desc: 'About',
-        display: 'Sobre Mi',
-    },
+    // {
+    //     id: 4,
+    //     desc: 'About',
+    //     display: 'Sobre Mi',
+    // },
     {
         id: 5,
         desc: 'Contact',
@@ -58,12 +58,12 @@ export const Menu = () => {
 
     return (
         <div className="relative">
-<div className={`${Styles.MenuContainer}`} style={showMenu && { height: '100vh' }}>
+              <div className={ `${Styles.MenuContainer} ${showMenu && Styles.menuMobile}` }>
                 <div
-                    className={`${Styles.logo} flex text-2xl ml-5 mr-5 rounded-lg p-2 transition-colors hover:bg-zinc-500 dark:hover:bg-zinc-700`}
-                    onClick={() => handleClick('HomePage')}
+                    className={`${Styles.logo} flex text-2xl ml-5 mr-5  p-2 transition-colors `}
+                    
                 >
-                    <Image src="/images/logor.svg" width={30} height={30} alt="Logo Rafael" />
+                    <Image src="/images/logor.svg" width={30} height={30} alt="Logo Rafael" onClick={() => handleClick('HomePage')}/>
                     <div onClick={() => setShowMenu(!showMenu)} className={Styles.iconMenu}>
                         {showMenu ? (
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -88,7 +88,7 @@ export const Menu = () => {
                                     </div>
                                 ))}
                             </div>
-                            <div>
+                            <div >
                                 <ThemeButton />
                             </div>
                         </>)

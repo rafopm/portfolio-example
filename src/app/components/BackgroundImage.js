@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import { ThemeProvider, useTheme } from 'next-themes';
+import { useTheme } from 'next-themes';
 import Styles from '../styles/BackgroundImage.module.css';
 
 export const BackgroundImage = () => {

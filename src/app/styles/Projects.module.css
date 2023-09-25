@@ -1,0 +1,33 @@
+
+.filterButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-weight: 400;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: solid;
+    padding-bottom: -10px;
+    align-items: center;
+    color: var(--text-light);
+}
+
+.dark .filterButtons{
+    color: var(--text-dark);
+}
+
+  .activeFilter {
+    color: var(--primary);
+    background-color: var(--background-light) ; 
+    padding: 10px 5px 10px 10px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+.dark .activeFilter {
+    color: var(--primary);
+    background-color: var(--background-dark) ; 
+    padding: 10px 5px 10px 10px;
+    border-radius: 8px 8px 0 0;
+  }

@@ -1,0 +1,42 @@
+
+  .spinningWrapper {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .spinningText {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    animation: spin 50s linear infinite;
+    color: var(--color-tertiary)
+  }
+  
+  .spinningText span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: 0 160px;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spinning-text-wrapper img {
+    width: 75%;
+    height: auto;
+    filter: drop-shadow(10px 10px 5px hsla(0, 0%, 0%, 0.461));
+  }

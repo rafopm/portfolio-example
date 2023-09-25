@@ -119,13 +119,16 @@ display: none;
     position: static;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     transform: none;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
   }
 
   .navMenu h1 {
     font-size: 1.5em;
+    margin-bottom: 15px;
   }
 
   .navMenu .line::after {
@@ -134,7 +137,6 @@ display: none;
 
 
   .menuMobile{
-
     height: 100vh;
     z-index: 101;
   }
@@ -144,5 +146,19 @@ display: none;
     justify-content: space-between;
     /* flex-direction: row; */
     width: 100%;
+    border-bottom: 1px solid var(--primary);
   }
+
+  .Item {
+    width: 100%;
+    border-bottom: 1px solid var(--primary);
+
+  }
+
+  .activeItem{
+    width: 100%;
+    border-bottom: 1px solid var(--primary);
+
+  }
+ 
 }

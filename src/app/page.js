@@ -27,52 +27,27 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [color, setColor] = useState("#ffffff");
 
-  useEffect(() => {
-    switch (activePage) {
-      case 'HomePage':
-        setShowHome(true);
-        setShowProjects(false);
-        setShowTools(false);
-        setShowAbout(false);
-        setShowContact(false);
-        break;
-      case 'Projects':
-        setShowHome(false);
-        setShowProjects(true);
-        setShowTools(false);
-        setShowAbout(false);
-        setShowContact(false);
-        break;
-      case 'Tools':
-        setShowHome(false);
-        setShowProjects(false);
-        setShowTools(true);
-        setShowAbout(false);
-        setShowContact(false);
-        break;
-      case 'About':
-        setShowHome(false);
-        setShowProjects(false);
-        setShowTools(false);
-        setShowAbout(true);
-        setShowContact(false);
-        break;
-      case 'Contact':
-        setShowHome(false);
-        setShowProjects(false);
-        setShowTools(false);
-        setShowAbout(false);
-        setShowContact(true);
-        break;
-      default:
-        setShowHome(true);
-        setShowProjects(false);
-        setShowTools(false);
-        setShowAbout(false);
-        setShowContact(false);
-        break;
-    }
-  }, [activePage]);
+  let componentToRender; 
+  switch (activePage) { 
+    case 'HomePage': 
+      componentToRender = <HomePage /> 
+      break; 
+    case 'Projects': 
+      componentToRender = <Projects /> 
+      break; 
+    case 'Tools': 
+      componentToRender = <Tools /> 
+      break; 
+    case 'About': 
+      componentToRender = <About /> 
+      break; 
+    case 'Contact': 
+      componentToRender = <Contact /> 
+      break; 
+    default: 
+      componentToRender = <HomePage /> 
+      break; 
+  } 
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -84,11 +59,7 @@ export default function Home() {
   return (
     <main>
       <div>
-        {showHome && <HomePage />}
-        {showProjects && <Projects />}
-        {showTools && <Tools />}
-        {showAbout && <About />}
-        {showContact && <Contact />}
+      {componentToRender} 
 
       </div>
       <BackgroundImage />

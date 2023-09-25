@@ -6,7 +6,7 @@ import { Redes } from '../../utils/Redes';
 import Trail from '../../utils/TrailSpringTexto';
 import { useSpring, animated } from '@react-spring/web';
 
-export const Contact = ({ visibility }) => {
+export const Contact = () => {
   const form = useRef();
   const SERVICEID = process.env.NEXT_PUBLIC_SERVICIO;
   const TEMPLATEID = process.env.NEXT_PUBLIC_TEMPLATE;
@@ -69,7 +69,7 @@ export const Contact = ({ visibility }) => {
 
 
   return (
-    <div className="bg-background-light mt-10 dark:bg-background-dark w-fit m-auto rounded-2xl "  style={{ visibility }}>
+    <div className="bg-background-light mt-10 dark:bg-background-dark w-fit m-auto rounded-2xl "  >
       <div >
         <div>
           <br className="mt-0 mb-3" />

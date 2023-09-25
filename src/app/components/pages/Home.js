@@ -7,7 +7,7 @@ import { Redes } from '../../utils/Redes';
 import Trail from '../../utils/TrailSpringTexto';
 import { useSpring, animated } from '@react-spring/web';
 
-export const HomePage = ({ visibility }) => {
+export const HomePage = () => {
   const cardSpring = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
@@ -16,7 +16,7 @@ export const HomePage = ({ visibility }) => {
   });
 
   return (
-    <div className={Styles.container}  style={{ visibility }}>
+    <div className={Styles.container} >
 
       <div className={Styles.elementos}>
         <div className={Styles.social}>

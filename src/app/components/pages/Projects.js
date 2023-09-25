@@ -10,7 +10,7 @@ const override = {
   borderColor: "#D16AE6",
 };
 
-export const Projects = ({ visibility }) => {
+export const Projects = () => {
   const [projectData, setProjectData] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("TODOS");
   const [selectedImage, setSelectedImage] = useState(null);
@@ -50,7 +50,7 @@ export const Projects = ({ visibility }) => {
 
 
   return (
-    <div className='ml-20 mr-20' style={{ visibility }}>
+    <div className='ml-20 mr-20' >
       {loading ? (
         <div className="fixed top-0 left-0 w-full h-screen flex items-center justify-center bg-gray-900">
           <RiseLoader

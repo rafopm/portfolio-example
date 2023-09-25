@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const About = ({ visibility }) => {
+export const About = () => {
   return (
-    <div style={{ visibility }}>
+    <div >
       About
       </div>
   )

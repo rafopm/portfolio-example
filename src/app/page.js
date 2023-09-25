@@ -17,8 +17,7 @@ const override = {
   borderColor: "#D16AE6",
 };
 
-
-const MemoizedComponent = React.memo(({ activePage }) => {
+const MemoizedComponent = React.memo(function RenderComponent({ activePage }) {
   let componentToRender;
   switch (activePage) {
     case 'HomePage':
@@ -40,7 +39,6 @@ const MemoizedComponent = React.memo(({ activePage }) => {
       componentToRender = <HomePage />
       break;
   }
-
   return (
     <div>
       {componentToRender}

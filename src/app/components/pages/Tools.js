@@ -122,9 +122,9 @@ const otros = [
     icon: <SiJoomla size={30} />,
   },
 ]
-export const Tools = () => {
+export const Tools = ({ visibility }) => {
   return (
-    <div className="flex flex-wrap flex-col justify-center text-text-light dark:text-text-dark">
+    <div className="flex flex-wrap flex-col justify-center text-text-light dark:text-text-dark" style={{ visibility }}>
       <div>
         <div className='mt-10 text-2xl  text-center'>FRONTEND</div>
         <Trail posicionEjeX={-300} altoObjeto={120}>

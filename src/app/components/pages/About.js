@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const About = () => {
+export const About = ({ visibility }) => {
   return (
-    <div>About</div>
+    <div style={{ visibility }}>
+      About
+      </div>
   )
 }

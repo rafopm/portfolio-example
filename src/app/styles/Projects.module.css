@@ -31,3 +31,18 @@
     padding: 10px 5px 10px 10px;
     border-radius: 8px 8px 0 0;
   }
+
+  @media (max-width: 414px) {
+
+    .filterButtons{
+
+      flex-direction: column;
+      padding-bottom: 10px;
+    }
+
+    .activeFilter {
+
+      border-radius: 30px;
+      padding: 10px 30px 10px 30px;
+    }
+  }

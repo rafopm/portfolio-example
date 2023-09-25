@@ -169,31 +169,3 @@ export const Projects = () => {
     </div>
   );
 };
-
-// import Image from 'next/image';
-
-// const ProjectImage = ({ project }) => {
-//   const isGif = project.isGif; // Supongamos que tienes una propiedad 'isGif' en el objeto 'project' que indica si la imagen es un GIF o no
-
-//   return (
-//     <div>
-//       {isGif ? (
-//         <img
-//           src={`/images/projects/${project.id}.gif`}
-//           alt={project.title}
-//           className="w-full h-auto object-cover rounded-lg cursor-pointer"
-//         />
-//       ) : (
-//         <Image
-//           width={500}
-//           height={500}
-//           src={`/images/projects/${project.id}.png`}
-//           alt={project.title}
-//           className="w-full h-auto object-cover rounded-lg cursor-pointer"
-//         />
-//       )}
-//     </div>
-//   );
-// };
-
-// export default ProjectImage;

@@ -8,8 +8,7 @@ import { SiExpress, SiOracle, SiSecurityscorecard, SiAdobeillustrator, SiJoomla 
 import { DiMsqlServer, DiPhotoshop, DiWordpress } from 'react-icons/di';
 
 import { RiFileExcel2Fill } from 'react-icons/ri';
-import Trail from '@/app/utils/TrailSpringTexto';
-// {/* JavaScript CSS  HTML  React NextJS  Bootstrap Tailwind */}
+
 const frontend = [
   {
     name: 'React',
@@ -68,10 +67,6 @@ const backend = [
   },
 ]
 
-// MySQL
-// MongoDB
-// Oracle Database JSON
-// SQL Server
 const database = [
   {
     name: 'MySQL',
@@ -90,10 +85,6 @@ const database = [
     icon: <DiMsqlServer size={30} />,
   },
 ]
-
-
-
-
 
 
 const otros = [
@@ -127,7 +118,7 @@ export const Tools = () => {
     <div className="flex flex-wrap flex-col justify-center text-text-light dark:text-text-dark">
       <div>
         <div className='mt-10 text-2xl  text-center'>FRONTEND</div>
-        <Trail posicionEjeX={-300} altoObjeto={120}>
+        
           <div className="flex flex-wrap justify-center text-center">
             {frontend.map((logo, index) => (
               <div
@@ -139,13 +130,13 @@ export const Tools = () => {
               </div>
             ))}
           </div>
-        </Trail>
+        
 
       </div>
 
       <div>
         <div className='mt-10 text-2xl  text-center'>BACKEND</div>
-        <Trail posicionEjeX={300} altoObjeto={120}>
+        
           <div className="flex flex-wrap justify-center text-center">
             {backend.map((logo, index) => (
               <div
@@ -157,12 +148,12 @@ export const Tools = () => {
               </div>
             ))}
           </div>
-        </Trail>
+        
       </div>
 
       <div>
         <div className='mt-10 text-2xl  text-center'>BASE DE DATOS</div>
-        <Trail posicionEjeX={-300} altoObjeto={120}>
+        
           <div className="flex flex-wrap justify-center text-center">
             {database.map((logo, index) => (
               <div
@@ -174,12 +165,12 @@ export const Tools = () => {
               </div>
             ))}
           </div>
-        </Trail>
+        
       </div>
 
       <div>
         <div className='mt-10 text-2xl  text-center'>OTROS</div>
-        <Trail posicionEjeX={300} altoObjeto={120}>
+        
           <div className="flex flex-wrap justify-center text-center">
             {otros.map((logo, index) => (
               <div
@@ -191,7 +182,7 @@ export const Tools = () => {
               </div>
             ))}
           </div>
-        </Trail>
+        
       </div>
 
       <div></div>

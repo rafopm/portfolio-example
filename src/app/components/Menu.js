@@ -60,6 +60,10 @@ export const Menu = () => {
         setLoading(false); // Establecer 'loading' en false una vez que todos los elementos se hayan cargado
     }, []);
 
+    const handleImageLoad = () => {
+        setLoading(false); // Establecer 'loading' en false una vez que la imagen se haya cargado
+    };
+
     return (
         <div className="relative">
             {!loading && ( // Mostrar el componente completo solo si 'loading' es false
@@ -69,16 +73,12 @@ export const Menu = () => {
                         className={`${Styles.logo} flex text-2xl ml-5 mr-5  p-2 transition-colors `}
 
                     >
-                        <Image src="/images/logor.svg" width={30} height={30} alt="Logo Rafael" onClick={() => handleClick('HomePage')} />
+                        <Image src="/images/logor.svg" width={30} height={30} alt="Logo Rafael" onClick={() => handleClick('HomePage')} onLoad={handleImageLoad} />
                         <div onClick={() => setShowMenu(!showMenu)} className={Styles.iconMenu}>
                             {showMenu ? (
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
+                                <Image src="/images/x.svg" width={30} height={30} alt="x (cerrar)" />
                             ) : (
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-                                </svg>
+                                <Image src="/images/hamburguer.svg" width={30} height={30} alt="menu hamburguer" />
                             )}
                         </div>
                     </div>

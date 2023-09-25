@@ -51,19 +51,7 @@ export const Projects = () => {
 
   return (
     <div className='ml-20 mr-20' >
-      {loading ? (
-        <div className="fixed top-0 left-0 w-full h-screen flex items-center justify-center bg-gray-900">
-          <RiseLoader
-            color="#D16AE6"
-            loading={loading}
-            cssOverride={override}
-            size={15}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-          />
-        </div>
-      ) : (
-        <>
+
           <div></div>
           <div></div>
           <div>
@@ -178,8 +166,6 @@ export const Projects = () => {
                 </div>
               )}
             </div></div>
-        </>
-      )}
     </div>
   );
 };
